@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {NavbarComponent} from "./layout/navbar/navbar.component";
 import {SidebarComponent} from "./layout/sidebar/sidebar.component";
-import {UserManagementComponent} from "./layout/user-management/user-management.component";
+import {UserManagementComponent} from "./user-management/user-management.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {NbThemeModule, NbCardModule} from '@nebular/theme';
 import {DashboardComponent} from "./dashboard/dashboard.component";
@@ -16,6 +16,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MainComponent } from './layout/main/main.component';
 import {NgxDatatableModule} from "@tusharghoshbd/ngx-datatable";
+import { ProductManagementComponent } from './product-management/product-management.component';
+import { CategoryManagementComponent } from './category-management/category-management.component';
+import { OrderManagementComponent } from './order-management/order-management.component';
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -23,7 +26,10 @@ import {NgxDatatableModule} from "@tusharghoshbd/ngx-datatable";
     UserManagementComponent,
     DashboardComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    ProductManagementComponent,
+    CategoryManagementComponent,
+    OrderManagementComponent
   ],
     imports: [
         CommonModule,
