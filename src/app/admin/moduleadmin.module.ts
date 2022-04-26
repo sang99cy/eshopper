@@ -13,27 +13,32 @@ import {
   NbSidebarService,
    NbLayoutModule, NbSidebarModule, NbContextMenuModule, NbActionsModule, NbMenuModule } from '@nebular/theme';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './layout/footer/footer.component';
+import { MainComponent } from './layout/main/main.component';
+import {NgxDatatableModule} from "@tusharghoshbd/ngx-datatable";
 @NgModule({
   declarations: [
     NavbarComponent,
     SidebarComponent,
     UserManagementComponent,
-    DashboardComponent
+    DashboardComponent,
+    FooterComponent,
+    MainComponent
   ],
-  imports: [
-    CommonModule,
-    AppRoutingModule,
-    // NbThemeModule,
-    NbCardModule,
-    RouterModule,HttpClientModule,
-    NbMenuModule.forRoot(),
-    NbLayoutModule,
-    NbSidebarModule,
-    NbContextMenuModule,
-    NbActionsModule,
-    NbThemeModule.forRoot({ name: 'default' }),
-    BrowserAnimationsModule
-  ],
+    imports: [
+        CommonModule,
+        AppRoutingModule,
+        // NbThemeModule,
+        NbCardModule,
+        RouterModule, HttpClientModule,
+        NbMenuModule.forRoot(),
+        NbLayoutModule,
+        NbSidebarModule,
+        NbContextMenuModule,
+        NbActionsModule,
+        NbThemeModule.forRoot({name: 'default'}),
+        BrowserAnimationsModule, NgxDatatableModule
+    ],
   providers: [ NbMenuService, NbSidebarService ],
 })
 export class ModuleadminModule { }

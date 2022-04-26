@@ -6,8 +6,6 @@ import { ModuleadminModule } from './admin/moduleadmin.module';
 import {NbStatusService} from "@nebular/theme";
 import { HomeclientComponent } from './homeclient/homeclient.component';
 import { RouterModule } from '@angular/router';
-// import { NgModule } from '@angular/core';
-import { InjectionToken} from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -20,6 +18,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
 import {NbMenuModule} from "@nebular/theme";
+import {NgxDatatableModule} from "@tusharghoshbd/ngx-datatable";
 
 @NgModule({
   declarations: [
@@ -41,6 +40,7 @@ import {NbMenuModule} from "@nebular/theme";
     RouterModule,
     HttpClientModule,
     NgxPaginationModule,
+    NgxDatatableModule,
     FormsModule,
     NbMenuModule.forRoot()
   ],
