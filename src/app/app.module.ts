@@ -15,10 +15,10 @@ import { CartComponent } from './components/cart/cart.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ShopDetailComponent } from './components/shop-detail/shop-detail.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
 import {NbMenuModule} from "@nebular/theme";
-import {NgxDatatableModule} from "@tusharghoshbd/ngx-datatable";
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +32,8 @@ import {NgxDatatableModule} from "@tusharghoshbd/ngx-datatable";
     ShopComponent,
     ShopDetailComponent,
     AppComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     ModuleadminModule,
@@ -39,8 +41,6 @@ import {NgxDatatableModule} from "@tusharghoshbd/ngx-datatable";
     BrowserModule,
     RouterModule,
     HttpClientModule,
-    NgxPaginationModule,
-    NgxDatatableModule,
     FormsModule,
     NbMenuModule.forRoot()
   ],

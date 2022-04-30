@@ -23,11 +23,13 @@
         <div class="table-title">
           <div class="row">
             <div class="col-xs-6">
-              <h2>DANH SÁCH SẢN PHẨM</h2>
+              <h2>DANH SÁCH THƯƠNG HIỆU</h2>
             </div>
             <div class="col-xs-6">
-              <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Thêm mới sản phẩm</span></a>
-              <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Xóa sản phẩm</span></a>
+              <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
+                class="material-icons">&#xE147;</i> <span>Thêm mới thương hiệu</span></a>
+              <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i>
+                <span>Xóa</span></a>
             </div>
           </div>
         </div>
@@ -40,30 +42,79 @@
 									<label for="selectAll"></label>
 								</span>
             </th>
-            <th>Ảnh bìa</th>
-            <th>Tên sản phẩm</th>
-            <th>Thương hiệu</th>
-            <th>Tên loại</th>
-            <th>Giá bán</th>
+            <th>Tên thương hiệu</th>
+            <th>Địa chỉ</th>
+            <th>Số điện thoại</th>
             <th>Actions</th>
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let item of productShop">
+          <tr>
             <td>
 								<span class="custom-checkbox">
 									<input type="checkbox" id="checkbox1" name="options[]" value="1">
 									<label for="checkbox1"></label>
 								</span>
             </td>
-            <td> <img style="width: 50px; height: 50px" class="img-fluid w-30" src={{item.src}} alt=""></td>
-            <td>{{item.product_name}}</td>
-            <td>Dior</td>
-            <td>Áo sơ mi</td>
-            <td>{{item.price}}</td>
+            <td>Chanel</td>
+            <td>89 Chiaroscuro Rd, Portland, USA</td>
+            <td>(171) 555-2222</td>
             <td>
-              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+                                                                               data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
+                                                                                   data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox1" name="options[]" value="1">
+									<label for="checkbox1"></label>
+								</span>
+            </td>
+            <td>Chanel</td>
+            <td>89 Chiaroscuro Rd, Portland, USA</td>
+            <td>(171) 555-2222</td>
+            <td>
+              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+                                                                               data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
+                                                                                   data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox1" name="options[]" value="1">
+									<label for="checkbox1"></label>
+								</span>
+            </td>
+            <td>Chanel</td>
+            <td>89 Chiaroscuro Rd, Portland, USA</td>
+            <td>(171) 555-2222</td>
+            <td>
+              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+                                                                               data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
+                                                                                   data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox1" name="options[]" value="1">
+									<label for="checkbox1"></label>
+								</span>
+            </td>
+            <td>Chanel</td>
+            <td>89 Chiaroscuro Rd, Portland, USA</td>
+            <td>(171) 555-2222</td>
+            <td>
+              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+                                                                               data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
+                                                                                   data-toggle="tooltip" title="Delete">&#xE872;</i></a>
             </td>
           </tr>
           </tbody>
@@ -83,7 +134,6 @@
       </div>
     </div>
   </div>
-
 
 
   <!-- của tôi
@@ -187,46 +237,26 @@
       <div class="modal-content">
         <form>
           <div class="modal-header">
-            <h4 class="modal-title">Cập nhật sản phẩm</h4>
+            <h4 class="modal-title">Cập nhật thương hiệu</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <label>Tên sản phẩm</label>
-              <input type="text" class="form-control" required value="áo sơ mi cổ đũi">
+              <label>Tên thương hiệu</label>
+              <input type="text" class="form-control" required>
             </div>
             <div class="form-group">
-              <label>Giá bán</label>
-              <input type="text" class="form-control" required value="150,000">
-            </div>
-            <div class="form-group">
-              <label>Mô tả</label>
+              <label>Địa chỉ</label>
               <textarea class="form-control" required></textarea>
             </div>
             <div class="form-group">
-              <select class="browser-default custom-select">
-                <option selected=""> <label>Thương hiệu</label></option>
-                <option value="1">Yody</option>
-                <option value="2">poloman</option>
-                <option value="3">Dior</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <select class="browser-default custom-select">
-                <option selected=""> <label>Thể loại</label></option>
-                <option value="1">Áo sơ mi</option>
-                <option value="2">Áo thun</option>
-                <option value="3">Áo khoác</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Ảnh bìa</label>
-              <input type="file" class="form-control" required>
+              <label>Số điện thoại</label>
+              <input type="text" class="form-control" required>
             </div>
           </div>
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Thoát">
-            <input type="submit" class="btn btn-success" value="Cập nhật">
+            <input type="submit" class="btn btn-info" value="cập nhật">
           </div>
         </form>
       </div>
@@ -238,11 +268,11 @@
       <div class="modal-content">
         <form>
           <div class="modal-header">
-            <h4 class="modal-title">Xóa sản phẩm</h4>
+            <h4 class="modal-title">Xóa thương hiệu</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
-            <p>Bạn có chắn chắn muốn xóa bản ghi này không ?</p>
+            <p>Bạn có chắc chắn muốn xóa bản ghi này không ?</p>
             <p class="text-warning"><small>This action cannot be undone.</small></p>
           </div>
           <div class="modal-footer">
@@ -259,41 +289,21 @@
       <div class="modal-content">
         <form>
           <div class="modal-header">
-            <h4 class="modal-title">Thêm sản phẩm</h4>
+            <h4 class="modal-title">Thêm mới thương hiệu</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <label>Tên sản phẩm</label>
+              <label>Tên thương hiệu</label>
               <input type="text" class="form-control" required>
             </div>
             <div class="form-group">
-              <label>Giá bán</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <label>Mô tả</label>
+              <label>Địa chỉ</label>
               <textarea class="form-control" required></textarea>
             </div>
             <div class="form-group">
-              <select class="browser-default custom-select">
-                <option selected=""> <label>Thương hiệu</label></option>
-                <option value="1">Yody</option>
-                <option value="2">poloman</option>
-                <option value="3">Dior</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <select class="browser-default custom-select">
-                <option selected=""> <label>Thể loại</label></option>
-                <option value="1">Áo sơ mi</option>
-                <option value="2">Áo thun</option>
-                <option value="3">Áo khoác</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Ảnh bìa</label>
-              <input type="file" class="form-control" required>
+              <label>Số điện thoại</label>
+              <input type="text" class="form-control" required>
             </div>
           </div>
           <div class="modal-footer">
@@ -305,3 +315,4 @@
     </div>
   </div>
 </div>
+
